@@ -1,0 +1,1 @@
+For any image assets (png, jpg, gif, svg) necessary for the UI

@@ -1,0 +1,1 @@
+For any CSS/SCSS files
