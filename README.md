@@ -25,3 +25,6 @@ The frontend code for Droptune is located in the `buildout` directory. It uses H
 1. [Fork the repo.](https://github.com/Shpigford/droptune-design/fork)
 2. Make your edits, making sure to modify the `.scss` files for CSS (instead of the compiled `.css` files).
 3. Submit your changes as a pull request.
+
+## License & Copyright
+Released under the MIT license, see the [LICENSE](./LICENSE) file. Copyright (c) 2018 Sabotage Media LLC.
