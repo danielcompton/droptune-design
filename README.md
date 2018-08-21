@@ -6,8 +6,8 @@ The goal for this repo is to give designers the ability to contribute to the des
 # Design
 You can find all design files on Figma. Use the Figma files as a starting point.
 
-* **App: https://www.figma.com/file/WEx8hulLya4imOPJ1PPDWBNa/Desktop**
-* **Branding: https://www.figma.com/file/Qdy5RjmZY7850xAiV7CjA6To/Logo**
+* **App: https://www.figma.com/file/WEx8hulLya4imOPJ1PPDWBNa/Desktop?node-id=0%3A1**
+* **Branding: https://www.figma.com/file/Qdy5RjmZY7850xAiV7CjA6To/Logo?node-id=36%3A25**
 
 ## How to contribute to design
 
