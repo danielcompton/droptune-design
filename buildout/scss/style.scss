@@ -1,0 +1,261 @@
+@import "variables";
+@import "reset";
+@import "media-queries";
+
+// Layout
+
+.container {
+	position: relative;
+	max-width: 1140px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+
+// Header
+
+header {
+	position: relative;
+	margin: 0 0 60px;
+	background: #fff;
+
+	h1 {
+		float: left;
+		display: inline-block;
+		height: 41px;
+		margin: 15px 50px 0 0;
+
+		@include max-screen(910px) {
+			float: none;
+		}
+
+		a {
+			display: block;
+			width: 110px;
+			height: 24px;
+			margin: 0;
+			padding: 0;
+			text-indent: -9999em;
+			background: url(../images/logo.svg) no-repeat top left;
+
+			&:hover {
+				border-top-color: #fff;
+			}
+		}
+	}
+
+// Dark Mode
+	body.dark & {
+		background: #000;
+
+		h1 a { background: url(../images/logo-dark.svg) no-repeat top left; }
+
+		nav {
+			background: #000;
+
+			a {
+				color: $gray;
+
+				@include max-screen(910px) {
+					border-bottom: 1px solid $darker-gray;
+				}
+
+				&#dark-mode { background: url(../images/dark-mode.svg) no-repeat top left; }
+				&#dark-mode:hover { background: url(../images/dark-mode-hover.svg) no-repeat top left; }
+			}
+
+			a:hover, a.active { color: #fff; }
+		}
+
+		form {
+			input[type=text] {
+				border-color: $darkest;
+				background: $darker-gray;
+			}
+		}
+
+		#mobile-menu { background: url(../images/mobile-menu-dark.svg) no-repeat top left; }
+	}
+
+	a#mobile-menu {
+	    display: none;
+	    position: absolute;
+	    top: 21px;
+	    right: 24px;
+	    width: 24px;
+	    height: 15px;
+	    background: url(../images/mobile-menu.svg) no-repeat top left;
+
+	    @include max-screen(910px) {
+	        display: block;
+	    }
+	}
+
+	nav {
+		height: 56px;
+		padding: 0;
+		background: #fff;
+
+		&.show {
+		    display: block;
+		}
+
+		@include max-screen(910px) {
+			position: absolute;
+			top: 57px;
+			left: 0;
+			right: 0;
+			padding: 0;
+			height: 56px;
+		    display: none;
+			height: auto;
+			background: #fff;
+			z-index: 99;
+		}
+
+		a {
+			display: inline-block;
+			padding: 15px 0 0;
+			margin: 0 35px 0 0;
+			border-top: 2px solid transparent;
+			font-size: 15px;
+			font-weight: 600;
+			color: $gray;
+			transition: all 0.2s linear;
+
+			&:hover, &.active {
+				color: $darker;
+				border-top-color: $blue;
+			}
+
+			@include max-screen(1023px) { margin: 0 20px 0 0; }
+
+			&#twitter-sign-in {
+				float: right;
+				margin: 0;
+
+				@include max-screen(910px) {
+					float: none;
+				}
+			}
+
+			&#dark-mode {
+				width: 14px;
+				height: 14px;
+				margin: 0;
+				padding: 0;
+				border-top: 0;
+				text-indent: -9999px;
+				background: url(../images/dark-mode-light.svg) no-repeat top left;
+
+				&:hover {
+					border-top: 0;
+					background: url(../images/dark-mode-light-hover.svg) no-repeat top left;
+				}
+
+				@include max-screen(910px) { display: none; }
+			}
+
+			@include max-screen(910px) {
+			    position: relative;
+			    clear: left;
+			    display: block;
+				margin: 0;
+				padding: 0;
+				border: 0;
+			    border-bottom: 1px solid $lighter-gray;
+			    line-height: 43px;
+			    text-align: center;
+			    padding: 8px 0;
+			    margin: 0;
+			}
+		}
+	}
+
+	form {
+		padding: 25px 0px 0;
+
+		input[type=text] {
+			display: block;
+			width: 98%;
+			border: 2px solid $lighter-gray;
+			height: 49px;
+			padding-left: 2%;
+			line-height: 49px;
+			border-radius: 4px;
+			font-size: 18px;
+			outline: none;
+			background: #fff;
+		}
+	}
+}
+
+// Typography
+
+h2 {
+	font: 400 22px/35px $fonts;
+	margin: 0 0 24px;
+}
+
+// Album Layout
+
+.album-grid {
+  display: grid;
+  grid-template-rows: repeat($album-grid-rows, auto);
+  grid-template-columns: repeat($album-grid-cols, 1fr);
+  grid-gap: 20px 30px;
+
+  @include max-screen(1023px) {
+  	grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include max-screen(768px) {
+  	grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include max-screen(600px) {
+  	grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.album {
+	font-size: 13px;
+
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 0 10px;
+		border-radius: 3px;
+	}
+
+	a {
+		display: block;
+		line-height: 17px;
+	}
+
+	a.album-title {
+		color: $darker;
+
+		body.dark & {
+			color: $lightest-gray;
+		}
+	}
+
+	a.album-artist {
+		color: $light-gray;
+	}
+}
+
+// Footer
+
+footer {
+	margin: 60px 0 0;
+	padding: 60px 0;
+	background: $lightest-gray;
+
+	body.dark & {
+		color: $light-gray;
+		background: $darker;
+	}
+
+	a { color: $blue; }
+}
