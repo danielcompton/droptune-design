@@ -216,7 +216,7 @@ h3 {
 
 .breadcrumb ol {
   list-style: none;
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0; }
   .breadcrumb ol li {
     display: inline-block; }
@@ -229,6 +229,19 @@ h3 {
     .breadcrumb ol li.active:after {
       content: '';
       padding: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px 30px; }
+
+.album-single {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 30px; }
+  .album-single img {
+    width: 100%;
+    border-radius: 5px; }
 
 .album-grid {
   display: grid;
