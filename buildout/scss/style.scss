@@ -142,6 +142,10 @@ h2 {
 	font: 400 22px/35px $fonts;
 	margin: 0 0 24px;
 }
+h3 {
+	font: 400 20px/30px $fonts;
+	margin: 0 0 14px;
+}
 
 // Page elements
 .subnav {
@@ -195,7 +199,7 @@ h2 {
       position: absolute;
       top: 0;
       width: 100%;
-      border-radius: 3px;
+      border-radius: 5px;
 		}
 		.sources {
 			position: absolute;
@@ -215,7 +219,7 @@ h2 {
 		display: block;
 		max-width: 100%;
 		margin: 0 0 10px;
-		border-radius: 3px;
+		border-radius: 5px;
 	}
 
 	.single {
@@ -247,6 +251,14 @@ h2 {
 
 	a.album-artist {
 		color: $light-gray;
+	}
+}
+.latest-upcoming {
+	margin-bottom: 60px;
+}
+.past-albums {
+	.past-date {
+		margin-bottom: 0px;
 	}
 }
 
