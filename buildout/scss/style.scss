@@ -194,15 +194,54 @@ h3 {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-gap: 20px 30px;
+	@include max-screen(700px) {
+  	grid-template-columns: 1fr 1fr;
+  }
+  @include max-screen(550px) {
+  	grid-template-columns: 1fr;
+  }
 }
 
 .album-single {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px 30px;
+	@include max-screen(700px) {
+  	grid-template-columns: 1fr;
+  }
 	img {
 		width: 100%;
 		border-radius: 5px;
+	}
+	.details {
+		span {
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: .9em;
+			color: $light-gray;
+		}
+		h1 {
+			line-height: 40px;
+		}
+		h2 {
+			color: $gray;
+			margin-bottom: 0;
+		}
+		.released {
+			font-size: .9em;
+		}
+		.add {
+			margin-top: 25px;
+			a {
+				border-radius: 100px;
+				color: $white;
+				padding: 8px 15px;
+				margin-right: 5px;
+				font-weight: 600;
+				font-size: 1.1em;
+				background: linear-gradient(180deg, #019BDD 0%, #01C0DD 100%);
+			}
+		}
 	}
 }
 
