@@ -1,1 +1,0 @@
-HTML template files. We should probably figure out a way to do actual templates with headers/footers/etc so we don't repeat ourselves, but this is a start.

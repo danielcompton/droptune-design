@@ -31,7 +31,7 @@ input, select {
 body {
   font: 400 16px/27px "Nunito", "Helvetica", Arial, sans-serif;
   *font-size: small;
-  color: #0f1011; }
+  color: #0F1011; }
 
 select, input, textarea, button {
   font: 99% sans-serif; }
@@ -74,15 +74,15 @@ html, body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 ::placeholder {
-  color: #9da2a4;
+  color: #9DA2A4;
   font-family: "Nunito", "Helvetica", Arial, sans-serif; }
 
 body {
   margin: 0;
   background: #fff; }
   body.dark {
-    color: #90999b;
-    background: #0f1011; }
+    color: #90999B;
+    background: #0F1011; }
 
 .container {
   position: relative;
@@ -92,63 +92,41 @@ body {
 
 header {
   position: relative;
-  margin: 0 0 60px;
-  background: #fff; }
+  margin: 0 0 40px;
+  background: #202425; }
   header h1 {
     float: left;
     display: inline-block;
     height: 41px;
-    margin: 15px 50px 0 0; }
+    margin: 20px 50px 0 0; }
     @media screen and (max-width: 910px) {
       header h1 {
         float: none; } }
     header h1 a {
       display: block;
-      width: 110px;
-      height: 24px;
+      width: 116px;
+      height: 23px;
       margin: 0;
       padding: 0;
       text-indent: -9999em;
-      background: url(../images/logo.svg) no-repeat top left; }
+      background: url(../images/logo-white.svg) no-repeat top left; }
       header h1 a:hover {
         border-top-color: #fff; }
-  body.dark header {
-    background: #000; }
-    body.dark header h1 a {
-      background: url(../images/logo-dark.svg) no-repeat top left; }
-    body.dark header nav {
-      background: #000; }
-      body.dark header nav a {
-        color: #90999b; }
-        @media screen and (max-width: 910px) {
-          body.dark header nav a {
-            border-bottom: 1px solid #373d3f; } }
-        body.dark header nav a#dark-mode {
-          background: url(../images/dark-mode.svg) no-repeat top left; }
-        body.dark header nav a#dark-mode:hover {
-          background: url(../images/dark-mode-hover.svg) no-repeat top left; }
-      body.dark header nav a:hover, body.dark header nav a.active {
-        color: #fff; }
-    body.dark header form input[type=text] {
-      border-color: #0f1011;
-      background: #373d3f; }
-    body.dark header #mobile-menu {
-      background: url(../images/mobile-menu-dark.svg) no-repeat top left; }
   header a#mobile-menu {
     display: none;
     position: absolute;
-    top: 21px;
+    top: 18px;
     right: 24px;
     width: 24px;
     height: 15px;
-    background: url(../images/mobile-menu.svg) no-repeat top left; }
+    color: #fff;
+    font-size: 1.5em; }
     @media screen and (max-width: 910px) {
       header a#mobile-menu {
         display: block; } }
   header nav {
-    height: 56px;
-    padding: 0;
-    background: #fff; }
+    height: 64px;
+    padding: 0; }
     header nav.show {
       display: block; }
     @media screen and (max-width: 910px) {
@@ -169,12 +147,12 @@ header {
       margin: 0 35px 0 0;
       border-top: 2px solid transparent;
       font-size: 15px;
-      font-weight: 600;
-      color: #90999b;
+      font-weight: 400;
+      color: #90999B;
       transition: all 0.2s linear; }
       header nav a:hover, header nav a.active {
-        color: #202425;
-        border-top-color: #15b6fb; }
+        color: #fff;
+        border-top-color: #15B6FB; }
       @media screen and (max-width: 1023px) {
         header nav a {
           margin: 0 20px 0 0; } }
@@ -184,20 +162,6 @@ header {
         @media screen and (max-width: 910px) {
           header nav a#twitter-sign-in {
             float: none; } }
-      header nav a#dark-mode {
-        width: 14px;
-        height: 14px;
-        margin: 0;
-        padding: 0;
-        border-top: 0;
-        text-indent: -9999px;
-        background: url(../images/dark-mode-light.svg) no-repeat top left; }
-        header nav a#dark-mode:hover {
-          border-top: 0;
-          background: url(../images/dark-mode-light-hover.svg) no-repeat top left; }
-        @media screen and (max-width: 910px) {
-          header nav a#dark-mode {
-            display: none; } }
       @media screen and (max-width: 910px) {
         header nav a {
           position: relative;
@@ -206,7 +170,7 @@ header {
           margin: 0;
           padding: 0;
           border: 0;
-          border-bottom: 1px solid #e3e8e8;
+          border-bottom: 1px solid #E3E8E8;
           line-height: 43px;
           text-align: center;
           padding: 8px 0;
@@ -216,7 +180,7 @@ header {
     header form input[type=text] {
       display: block;
       width: 98%;
-      border: 2px solid #e3e8e8;
+      border: 2px solid #E3E8E8;
       height: 49px;
       padding-left: 2%;
       line-height: 49px;
@@ -257,16 +221,16 @@ h2 {
   .album a.album-title {
     color: #202425; }
     body.dark .album a.album-title {
-      color: #f9f9f9; }
+      color: #F9F9F9; }
   .album a.album-artist {
-    color: #9da2a4; }
+    color: #9DA2A4; }
 
 footer {
   margin: 60px 0 0;
   padding: 60px 0;
-  background: #f9f9f9; }
+  background: #F9F9F9; }
   body.dark footer {
-    color: #9da2a4;
+    color: #9DA2A4;
     background: #202425; }
   footer a {
-    color: #15b6fb; }
+    color: #15B6FB; }
