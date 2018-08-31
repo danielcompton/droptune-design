@@ -214,6 +214,22 @@ h3 {
         color: #202425;
         border-bottom: 2px solid #15B6FB; }
 
+.breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .breadcrumb ol li {
+    display: inline-block; }
+    .breadcrumb ol li a {
+      color: #90999B; }
+    .breadcrumb ol li:after {
+      content: '/';
+      color: #90999B;
+      padding: 0 8px 0 12px; }
+    .breadcrumb ol li.active:after {
+      content: '';
+      padding: 0; }
+
 .album-grid {
   display: grid;
   grid-template-rows: repeat(4, auto);
