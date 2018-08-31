@@ -343,14 +343,9 @@ h3 {
 
 // Footer
 footer {
-	margin: 60px 0 0;
-	padding: 60px 0;
+	margin: 40px 0 0;
+	padding: 40px 0;
 	background: $lightest-gray;
-
-	body.dark & {
-		color: $light-gray;
-		background: $darker;
-	}
 
 	a { color: $blue; }
 }
